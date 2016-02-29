@@ -2,13 +2,14 @@ require 'http'
 require 'timeout'
 require 'ox'
 
+require_relative 'http_api_client'
+
 # CBR rates expert class
-class CbrRatesProvider
+class CbrRatesProvider < HttpApiClient
 
   URL = 'http://www.cbr.ru/scripts/XML_daily.asp'.freeze
   DATE_PARAM = 'date_req'.freeze
   DATE_FORMAT = '%d/%m/%Y'.freeze
-  HTTP_TIMEOUT_SECS = 1500
 
   attr_accessor :date
 
@@ -18,30 +19,21 @@ class CbrRatesProvider
 
   def get(code)
     params = { DATE_PARAM => date.strftime(DATE_FORMAT) }
-    rate_nodes = request_and_parse(URL, params)
+    rate_nodes = fetch_and_parse(URL, params)
     rate_node = rate_nodes.find { |node| node.CharCode.text == code }
     return rate_node.Value.text.tr(',', '.').to_f if rate_node
   end
 
   private
 
-  def request_and_parse(url, params)
-    logger.debug "requesting #{url.inspect} with parameters #{params.inspect}"
-    t0 = Time.now
-    xml = http_timeout.get(url, params: params).to_s
-    logger.debug "CBR answered in #{Time.now - t0}s"
-
-    doc = Ox.load(xml)
+  def fetch_and_parse(url, params)
+    xml = http_get(url, params)
+    doc = Ox.load(xml.to_s)
     doc.locate('ValCurs/*')
   end
 
-  def http_gem_timeout
-    # due to strangeness of HTTP gem timeout API this needs to be divided - resulting timeout will be the whole
-    HTTP_TIMEOUT_SECS / 3
-  end
-
-  def http_timeout
-    HTTP.timeout(:global, write: http_gem_timeout, connect: http_gem_timeout, read: http_gem_timeout)
+  def service_name
+    'CBR'
   end
 
 end
