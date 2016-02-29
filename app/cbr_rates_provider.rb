@@ -8,6 +8,7 @@ class CbrRatesProvider < HttpApiClient
   URL = 'http://www.cbr.ru/scripts/XML_daily.asp'.freeze
   DATE_PARAM = 'date_req'.freeze
   DATE_FORMAT = '%d/%m/%Y'.freeze
+  DECIMAL_SEP = '.'.freeze
 
   attr_accessor :date
 
@@ -19,7 +20,7 @@ class CbrRatesProvider < HttpApiClient
     params = { DATE_PARAM => date.strftime(DATE_FORMAT) }
     rate_nodes = fetch_and_parse(URL, params)
     rate_node = rate_nodes.find { |node| node.CharCode.text == code }
-    return rate_node.Value.text.tr(',', '.').to_f if rate_node
+    return rate_node.Value.text.tr(',', DECIMAL_SEP).to_f if rate_node
   end
 
   private
