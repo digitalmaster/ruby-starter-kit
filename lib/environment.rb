@@ -1,5 +1,6 @@
 require 'active_support/logger'
 
+# App environment boilerplate code
 class Environment
 
   APP_ROOT = File.expand_path(File.dirname(__FILE__) + '/..')
@@ -44,4 +45,5 @@ def console_logger
 end
 
 Dir["#{Environment::APP_ROOT}/config/initializers/**/*.rb"].sort.each { |f| require f }
+Dir["#{Environment::APP_ROOT}/lib/**/*.rb"].sort.each { |f| require f }
 Dir["#{Environment::APP_ROOT}/app/**/*.rb"].sort.each { |f| require f }

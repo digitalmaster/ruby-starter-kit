@@ -1,4 +1,4 @@
 #!/usr/bin/env ruby
-require_relative 'config/environment'
+require_relative 'lib/environment'
 
 puts CbrRatesProvider.new(ENV['date']).get('USD')

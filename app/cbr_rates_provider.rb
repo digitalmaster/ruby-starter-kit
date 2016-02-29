@@ -2,8 +2,6 @@ require 'http'
 require 'timeout'
 require 'ox'
 
-require_relative 'http_api_client'
-
 # CBR rates expert class
 class CbrRatesProvider < HttpApiClient
 
