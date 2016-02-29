@@ -1,5 +1,6 @@
 #CBR rates fetcher
 A command line tool to fetch [CBR](http://cbr.ru) currency rate as of given date. A wrapper over CBR XML API method.
+
 [![Travis build status](http://img.shields.io/travis/artemv/cbr-rates.svg?style=flat)](https://travis-ci.org/artemv/cbr-rates)
 [![Code Climate](https://codeclimate.com/github/artemv/cbr-rates/badges/gpa.svg)](https://codeclimate.com/github/artemv/cbr-rates)
 
