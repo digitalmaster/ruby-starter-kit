@@ -1,4 +1,6 @@
 language: ruby
 cache: bundler
+before_script:
+  - mkdir log
 script:
   - bundle exec rspec

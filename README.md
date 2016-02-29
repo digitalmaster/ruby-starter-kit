@@ -7,6 +7,7 @@ A command line tool to fetch [CBR](http://cbr.ru) currency rate as of given date
 * Install Bundler and dependencies:
 ```
 cd cbr-rates
+mkdir log
 gem install bundler
 bundle install
 ```
