@@ -10,5 +10,17 @@ cd cbr-rates
 gem install bundler
 bundle install
 ```
-* Run the currency rate fetching script: `date="2015-09-16" code=BRL ./cbr_rate.rb`
-By default it fetches USD rate: `date="2015-09-16" ./cbr_rate.rb`
+
+#Usage
+Run the currency rate fetching script:
+```
+date="2015-09-16" code=BRL ./cbr_rate.rb
+# 17.6201
+```
+
+By default it fetches USD rate:
+```
+date="2015-09-16" ./cbr_rate.rb
+# 67.1574
+```
+
