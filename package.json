@@ -12,7 +12,7 @@
     "generator",
     "ruby-starter-kit"
   ],
-  "main": "generators/index.js",
+  "main": "app/index.js",
   "keywords": [
     "ruby",
     "bundler",
@@ -30,7 +30,7 @@
       "mocha": "*"
   },
   "scripts": {
-    "test": "mocha generator-test"
+    "test": "mocha"
   },
   "license": "MIT"
 }
