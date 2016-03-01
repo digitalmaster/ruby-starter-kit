@@ -1,8 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'ox'
 gem 'activesupport'
-gem 'http'
 
 group :development do
   gem 'guard-rspec', require: false

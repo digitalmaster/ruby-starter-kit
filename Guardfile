@@ -49,7 +49,6 @@ guard :rspec, cmd: 'bundle exec rspec' do
   watch(rspec.spec_files)
 
   watch(/.+\.rb$/)
-
 end
 
 guard :rubocop, cli: ['-S', '-D'] do
