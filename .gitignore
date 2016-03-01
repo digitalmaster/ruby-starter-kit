@@ -17,4 +17,6 @@
 /public/assets
 /out
 /spec/out
+node_modules
+deps-auto-update.sh
 
