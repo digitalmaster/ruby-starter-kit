@@ -8,7 +8,7 @@ var os = require('os');
 describe('javascript:app', function () {
 
     before(function (done) {
-        helpers.run(path.join(__dirname, '../generator'))
+        helpers.run(path.join(__dirname, '../app'))
             .withOptions({ skipInstall: true })
             .on('end', done);
     });
