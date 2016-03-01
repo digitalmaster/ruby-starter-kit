@@ -22,7 +22,7 @@ bundle install
 #Usage
 Run the app entry point script:
 ```
-bin/app.rb
+repo=octokit.py bin/app.rb
 ```
 
 Run the guard dev env tool:
