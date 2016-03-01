@@ -5,6 +5,7 @@ var yeoman = require('yeoman-generator');
 var chalk = require('chalk');
 var yosay = require('yosay');
 var glob = require('glob');
+var run = require('gulp-run');
 
 module.exports = yeoman.generators.Base.extend({
 
@@ -35,6 +36,8 @@ module.exports = yeoman.generators.Base.extend({
             this.destinationPath(dest)
         );
       }, this);
+      var cmd = new run.Command('bundle install');
+      cmd.exec();
       done();
     }.bind(this));
   },
