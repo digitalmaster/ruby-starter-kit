@@ -1,6 +1,5 @@
 #Ruby Starter Kit
-This is a Ruby app boilerplate giving you an app skeleton with conventional code structure and dev stack to start
-some console mode utility app with (Bundler, Guard, ActiveSupport Logger, Rubocop, RSpec, WebMock, Travis, CodeClimate).
+This is a Ruby app boilerplate with conventional code structure and basic dev env to start some console mode utility app with (Bundler, Guard, ActiveSupport Logger, Rubocop, RSpec, WebMock, Travis, CodeClimate).
 
 [![Travis build status](http://img.shields.io/travis/artemv/ruby-starter-kit.svg?style=flat)](https://travis-ci.org/artemv/ruby-starter-kit)
 [![Code Climate](https://codeclimate.com/github/artemv/ruby-starter-kit/badges/gpa.svg)](https://codeclimate.com/github/artemv/ruby-starter-kit)
