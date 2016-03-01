@@ -19,6 +19,8 @@ gem install bundler
 bundle install
 ```
 
+Alternatively if you are using Yeoman you can install it using its generator as described [here](https://github.com/artemv/generator-ruby-starter-kit).
+
 #Usage
 Run the app entry point script:
 ```
