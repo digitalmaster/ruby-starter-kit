@@ -9,7 +9,7 @@
     "url": "https://github.com/artemv"
   },
   "files": [
-    "generator",
+    "app",
     "ruby-starter-kit"
   ],
   "main": "app/index.js",
