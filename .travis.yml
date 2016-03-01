@@ -1,4 +1,6 @@
-language: ruby
-cache: bundler
-script:
-  - bundle exec rspec
+sudo: false
+language: node_js
+node_js:
+  - '0.12'
+  - '0.10'
+  - '5.6'
