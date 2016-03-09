@@ -1,9 +1,13 @@
 language: ruby
-node_js:
-  - '0.12'
 cache:
   directories:
     - vendor/bundle
     - node_modules
+install:
+  - bundle install --jobs=3 --retry=3 --deployment
+  - . $HOME/.nvm/nvm.sh
+  - nvm install stable
+  - nvm use stable
+  - npm install
 script:
   - bundle exec rspec && npm install && npm run semantic-release
