@@ -1,0 +1,24 @@
+{
+  "name": "@artemv/ruby-starter-kit",
+  "version": "1.0.0",
+  "description": "Ruby app boilerplate based on Ruby Starter Kit (Bundler, Guard, ActiveSupport Logger, Rubocop, RSpec, WebMock, Travis, CodeClimate)",
+  "main": "index.js",
+  "scripts": {
+    "test": "true"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/artemv/ruby-starter-kit.git"
+  },
+  "keywords": [
+    "rspec",
+    "bundler",
+    "ruby"
+  ],
+  "author": "Artem Vasiliev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/artemv/ruby-starter-kit/issues"
+  },
+  "homepage": "https://github.com/artemv/ruby-starter-kit#readme"
+}

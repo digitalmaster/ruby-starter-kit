@@ -17,4 +17,4 @@
 /public/assets
 /out
 /spec/out
-
+/node_modules
