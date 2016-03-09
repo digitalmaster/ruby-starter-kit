@@ -10,4 +10,4 @@ install:
   - nvm use stable
   - npm install
 script:
-  - bundle exec rspec && npm install && npm run semantic-release
+  - bundle exec rspec && npm run semantic-release
