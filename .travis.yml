@@ -1,4 +1,7 @@
 language: ruby
-cache: bundler
+cache:
+  - bundler
+  directories:
+    - node_modules
 script:
-  - bundle exec rspec && npm run semantic-release
+  - bundle exec rspec && npm install && npm run semantic-release
