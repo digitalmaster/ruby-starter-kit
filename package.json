@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "true",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post && semantic-dependents-updates-github"
   },
   "repository": {
     "type": "git",
@@ -23,9 +23,15 @@
   "homepage": "https://github.com/artemv/ruby-starter-kit#readme",
   "devDependencies": {
     "semantic-release": "^4.3.5",
+    "@egis/semantic-dependents-updates-github": "^1.0.9",
     "@semantic-release/commit-analyzer": "github:artemv/commit-analyzer#414c9e8168518e00d5fd2bd0d653867404c994cb"
   },
   "release": {
     "analyzeCommits": "./node_modules/@semantic-release/commit-analyzer/dist/index.js"
+  },
+  "semantic-dependents-updates": {
+    "dependents": {
+      "generator-ruby-starter-kit": "git@github.com:artemv/generator-ruby-starter-kit.git"
+    }
   }
 }
