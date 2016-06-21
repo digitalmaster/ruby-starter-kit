@@ -12,7 +12,7 @@ Place your app-specific code in app/ dir, and utility code that you'd like to ex
 
 #Installation
 * Clone the repo: `git clone https://github.com/artemv/ruby-starter-kit.git my-app`
-* Install Ruby 2.3.0 from https://www.ruby-lang.org/en/downloads/ or via RVM (https://rvm.io/)
+* Install Ruby 2.3.1 from https://www.ruby-lang.org/en/downloads/ or via RVM (https://rvm.io/)
 * Install Bundler and dependencies:
 ```
 cd my-app
