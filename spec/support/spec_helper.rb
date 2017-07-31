@@ -1,6 +1,7 @@
-require 'codeclimate-test-reporter'
+require 'simplecov'
 require 'webmock/rspec'
-CodeClimate::TestReporter.start
+
+SimpleCov.start
 
 require_relative '../../lib/environment'
 

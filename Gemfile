@@ -11,6 +11,9 @@ end
 
 group :development, :test do
   gem 'rspec'
-  gem 'webmock'
-  gem 'codeclimate-test-reporter', require: false
+end
+
+group :test do
+  gem 'simplecov', require: false                   # Test coverage reporting
+  gem 'webmock'                                     # disallow real HTTP reqs from specs
 end
