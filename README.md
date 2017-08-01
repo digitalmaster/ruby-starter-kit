@@ -1,4 +1,6 @@
 # Ruby Starter Kit
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/artemv/ruby-starter-kit.svg)](https://greenkeeper.io/)
 This is a Ruby app boilerplate with conventional code structure and basic dev env to start some console mode utility app with (Bundler, Guard, ActiveSupport Logger, Rubocop, RSpec, WebMock, Travis, CodeClimate).
 
 [![Travis build status](http://img.shields.io/travis/artemv/ruby-starter-kit.svg?style=flat)](https://travis-ci.org/artemv/ruby-starter-kit)
