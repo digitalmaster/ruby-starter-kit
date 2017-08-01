@@ -22,12 +22,12 @@
   },
   "homepage": "https://github.com/artemv/ruby-starter-kit#readme",
   "devDependencies": {
-    "semantic-release": "^4.3.5",
     "@egis/semantic-dependents-updates-github": "^1.0.9",
-    "@semantic-release/commit-analyzer": "github:artemv/commit-analyzer#414c9e8168518e00d5fd2bd0d653867404c994cb"
+    "freeform-semantic-commit-analyzer": "^1.1.0",
+    "semantic-release": "^4.3.5"
   },
   "release": {
-    "analyzeCommits": "./node_modules/@semantic-release/commit-analyzer/dist/index.js"
+    "analyzeCommits": "./node_modules/freeform-semantic-commit-analyzer/dist/index.js"
   },
   "semantic-dependents-updates": {
     "dependents": {
