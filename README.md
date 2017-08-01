@@ -3,7 +3,7 @@
 [![Greenkeeper badge](https://badges.greenkeeper.io/artemv/ruby-starter-kit.svg)](https://greenkeeper.io/)
 This is a Ruby app boilerplate with conventional code structure and basic dev env to start some console mode utility app with (Bundler, Guard, ActiveSupport Logger, Rubocop, RSpec, WebMock, Travis, CodeClimate).
 
-[![Travis build status](http://img.shields.io/travis/artemv/ruby-starter-kit.svg?style=flat)](https://travis-ci.org/artemv/ruby-starter-kit)
+[![Travis build status](http://img.shields.io/travis/artemv/ruby-starter-kit.svg?branch=master&style=flat)](https://travis-ci.org/artemv/ruby-starter-kit)
 [![Code Climate](https://codeclimate.com/github/artemv/ruby-starter-kit/badges/gpa.svg)](https://codeclimate.com/github/artemv/ruby-starter-kit)
 [![Test Coverage](https://codeclimate.com/github/artemv/ruby-starter-kit/badges/coverage.svg)](https://codeclimate.com/github/artemv/ruby-starter-kit/coverage)
 [![Dependency Status](https://gemnasium.com/artemv/ruby-starter-kit.svg)](https://gemnasium.com/artemv/ruby-starter-kit)
