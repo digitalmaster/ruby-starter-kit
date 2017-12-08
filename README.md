@@ -14,12 +14,25 @@ Place your app-specific code in app/ dir, and utility code that you'd like to ex
 
 # Installation
 * Clone the repo: `git clone https://github.com/artemv/ruby-starter-kit.git my-app`
+
+## 1 - In your machine
 * Install Ruby 2.4.1 from https://www.ruby-lang.org/en/downloads/ or via RVM (https://rvm.io/)
 * Install Bundler and dependencies:
 ```
 cd my-app
 gem install bundler
 bundle install
+```
+
+## 2 - Using Docker
+* Build the Docker Compose:
+```
+docker-compose up --build
+```
+
+* Go inside the docker container:
+```
+docker exec -it <docker-image> /bin/bash
 ```
 
 Alternatively if you are using Yeoman you can install it using its generator as described [here](https://github.com/artemv/generator-ruby-starter-kit).
