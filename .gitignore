@@ -20,3 +20,4 @@
 /node_modules
 /coverage
 npm-debug.log
+.bash_history
