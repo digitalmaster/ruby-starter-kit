@@ -38,7 +38,7 @@ that means you have too old version of docker server. Check it with command:
 
 * Go inside the docker container:
 ```
-docker exec -it <docker-image> /bin/bash
+docker exec -it ruby-starter-kit /bin/bash
 ```
 
 Now you can change the source files locally, and the changes will be seen inside docker container transparently - so
