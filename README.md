@@ -16,7 +16,7 @@ Place your app-specific code in app/ dir, and utility code that you'd like to ex
 * Clone the repo: `git clone https://github.com/artemv/ruby-starter-kit.git my-app`
 
 ## 1 - In your machine
-* Install Ruby 2.4.1 from https://www.ruby-lang.org/en/downloads/ or via RVM (https://rvm.io/)
+* Install Ruby 2.4.2 from https://www.ruby-lang.org/en/downloads/ or via RVM (https://rvm.io/)
 * Install Bundler and dependencies:
 ```
 cd my-app
@@ -24,23 +24,30 @@ gem install bundler
 bundle install
 ```
 
+Alternatively if you are using Yeoman you can install it using its generator as described [here](https://github.com/artemv/generator-ruby-starter-kit).
+
 ## 2 - Using Docker
 * Build the Docker Compose:
 ```
 docker-compose up --build
 ```
 
+If it complains like "ERROR: The Docker Engine version is less than the minimum required by Compose. Your current project requires a Docker Engine of version 1.13.0 or greater."
+that means you have too old version of docker server. Check it with command:
+`docker version`. Then you can upgrade it with `docker-machine upgrade default`.
+
 * Go inside the docker container:
 ```
 docker exec -it <docker-image> /bin/bash
 ```
 
-Alternatively if you are using Yeoman you can install it using its generator as described [here](https://github.com/artemv/generator-ruby-starter-kit).
-
+Now you can change the source files locally, and the changes will be seen inside docker container transparently - so
+it's rather straightforward way to set up a working dev env.
+ 
 # Usage
 Run the app entry point script:
 ```
-repo=octokit.py bin/app.rb
+repo=octokit.rb bin/app.rb
 ```
 
 Run the guard dev env tool:
