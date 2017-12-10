@@ -29,7 +29,7 @@ Alternatively if you are using Yeoman you can install it using its generator as 
 ## 2 - Using Docker
 * Build the Docker Compose:
 ```
-docker-compose up --build
+docker-compose up -d --build
 ```
 
 If it complains like "ERROR: The Docker Engine version is less than the minimum required by Compose. Your current project requires a Docker Engine of version 1.13.0 or greater."
