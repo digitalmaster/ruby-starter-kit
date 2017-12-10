@@ -12,7 +12,7 @@ class GithubClient
     repos = JSON.parse(response.body)
     repo_info = repos.find { |info| info['name'] == repo_name }
     logger.debug('repo_info: ' + repo_info.inspect)
-    repo_info['full_name'] if repo_info
+    repo_info['description'] if repo_info
   end
 
 end
