@@ -10,7 +10,7 @@ class Main
   end
 
   def run
-    GithubClient.new.full_name(arg)
+    GithubClient.new.description(arg)
   end
 
 end

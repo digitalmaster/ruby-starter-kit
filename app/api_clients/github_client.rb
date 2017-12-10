@@ -5,7 +5,7 @@ require 'json'
 # Some dummy remote URL getter just to show WebMock in action in specs
 class GithubClient
 
-  def full_name(repo_name)
+  def description(repo_name)
     uri = URI.parse('https://api.github.com/orgs/octokit/repos')
 
     response = Net::HTTP.get_response(uri)
