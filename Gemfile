@@ -1,11 +1,13 @@
+# frozen_string_literal: true
+
 source 'https://rubygems.org'
-ruby '2.4.2'
+ruby '2.5.1'
 
 gem 'activesupport'
 
 group :development do
-  gem 'guard-rspec', require: false
   gem 'guard-bundler'
+  gem 'guard-rspec', require: false
   gem 'guard-rubocop', require: false
 end
 

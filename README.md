@@ -16,7 +16,7 @@ Place your app-specific code in app/ dir, and utility code that you'd like to ex
 * Clone the repo: `git clone https://github.com/artemv/ruby-starter-kit.git my-app`
 
 ## 1 - In your machine
-* Install Ruby 2.4.2 from https://www.ruby-lang.org/en/downloads/ or via RVM (https://rvm.io/)
+* Install Ruby 2.5.1 from https://www.ruby-lang.org/en/downloads/ or via RVM (https://rvm.io/)
 * Install Bundler and dependencies:
 ```
 cd my-app
@@ -56,3 +56,8 @@ guard
 ```
 It will run rubocop on start, will run rubocop inspections on changed files and will re-run all RSpecs and rubocop
 inspections if you hit Enter in guard window.
+
+Run the tests:
+```
+rspec
+```

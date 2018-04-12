@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative 'api_clients/github_client'
 
 # A stub for apps' entry point class
