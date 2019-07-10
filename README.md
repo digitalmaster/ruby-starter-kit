@@ -6,7 +6,6 @@ This is a Ruby app boilerplate with conventional code structure and basic dev en
 [![Travis build status](http://img.shields.io/travis/artemv/ruby-starter-kit.svg?branch=master&style=flat)](https://travis-ci.org/artemv/ruby-starter-kit)
 [![Code Climate](https://codeclimate.com/github/artemv/ruby-starter-kit/badges/gpa.svg)](https://codeclimate.com/github/artemv/ruby-starter-kit)
 [![Test Coverage](https://codeclimate.com/github/artemv/ruby-starter-kit/badges/coverage.svg)](https://codeclimate.com/github/artemv/ruby-starter-kit/coverage)
-[![Dependency Status](https://gemnasium.com/artemv/ruby-starter-kit.svg)](https://gemnasium.com/artemv/ruby-starter-kit)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 
 # App code structure
