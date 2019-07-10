@@ -3,8 +3,7 @@
   "description": "Ruby app boilerplate based on Ruby Starter Kit (Bundler, Guard, ActiveSupport Logger, Rubocop, RSpec, WebMock, Travis, CodeClimate)",
   "main": "index.js",
   "scripts": {
-    "test": "true",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post && semantic-dependents-updates-github"
+    "test": "true"
   },
   "repository": {
     "type": "git",
@@ -23,11 +22,10 @@
   "homepage": "https://github.com/artemv/ruby-starter-kit#readme",
   "devDependencies": {
     "@egis/semantic-dependents-updates-github": "^1.0.9",
-    "freeform-semantic-commit-analyzer": "^1.1.0",
-    "semantic-release": "^15.1.7"
+    "simple-semantic-config": "^6.0.14"
   },
   "release": {
-    "analyzeCommits": "./node_modules/freeform-semantic-commit-analyzer/dist/index.js"
+    "extends": "simple-semantic-config"
   },
   "semantic-dependents-updates": {
     "dependents": {
